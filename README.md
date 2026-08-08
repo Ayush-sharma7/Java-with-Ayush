@@ -138,7 +138,7 @@ Next areas I'm working toward include:
 
 **Ayush Sharma**
 
-B.Tech CSE Student | Aspiring Software Developer
+B.Tech CSE(AIML) Student | Aspiring Software Developer
 
 ---
 
