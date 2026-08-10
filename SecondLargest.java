@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class SecondLargest{
   public static void display(int arr[]){
 
@@ -6,7 +8,8 @@ public class SecondLargest{
       System.out.printf("%d ",ele);
     }
   }
-  static public void bubbleSort(int arr[]){
+  public static void bubbleSort(int arr[]){
+
     for (int i = 0; i < arr.length - 1 ; i++) {
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
@@ -17,11 +20,24 @@ public class SecondLargest{
             }
         }
     }
-    public static void main(String[] args){
-      int arr[]={12,234,62,23,534,21,35,2222};
+  public static void main(String[] args){
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Enter number of elements: ");
+    int n = sc.nextInt();
+
+    int[] arr = new int[n];
+    System.out.println("Enter elements: ");
+    for (int i=0; i<n; i++){
+      arr[i] = sc.nextInt();
+    }
+    
       System.out.println("Og array: ");
       display(arr);
       bubbleSort(arr);
       System.out.println("\n\nSecond largest: " + arr[arr.length-2]);
+
+      sc.close();
     }
   }
