@@ -8,6 +8,7 @@ public class GreatestAmongThree {
       int b = sc.nextInt();
       int c = sc.nextInt();
       System.out.println(a>b?((a>c)?a:c):(b>c?b:c));
+    //   System.out.println(Math.max(Math.max(a,b),c));
       sc.close();
     }
 }
