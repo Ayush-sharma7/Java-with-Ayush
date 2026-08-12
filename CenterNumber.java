@@ -10,4 +10,4 @@ public class CenterNumber {
     System.out.println((a + b + c) - Math.max(Math.max(a, b), c) - Math.min((Math.min(a, b)), c));
     sc.close();
   }
-}
+} 
