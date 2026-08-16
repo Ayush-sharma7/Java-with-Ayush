@@ -1,7 +1,12 @@
+import java.util.*;
 
 public class StarPattern8{
     public static void main(String[] args){
-        int n = 5;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter number of lines: ");
+        int n = sc.nextInt();
+
         for (int i = 1; i<=n ; i++){
             for (int k = i; k<n ;k++){
                 System.out.print(" ");
@@ -16,5 +21,6 @@ public class StarPattern8{
             }
             System.out.println();
         }
+        sc.close();
     }
 }
