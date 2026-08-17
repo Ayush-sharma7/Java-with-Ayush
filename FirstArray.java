@@ -22,7 +22,7 @@ public class FirstArray{
     arr4 = new int[]{1,2,3,4,5};
     System.out.println("arr4: " + Arrays.toString(arr4));
 
-    int arr5[] = null;
+    // int arr5[] = null;
     //this is a null array with no memory location.
 
     try (Scanner input = new Scanner(System.in)) {
