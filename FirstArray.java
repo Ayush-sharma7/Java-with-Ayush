@@ -1,5 +1,4 @@
 //arrays are created dynamically in java and the memory is allocated at the runtime.
-//
 import java.util.*;
 
 public class FirstArray{
