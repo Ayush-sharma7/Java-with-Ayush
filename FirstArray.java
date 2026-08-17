@@ -25,9 +25,14 @@ public class FirstArray{
     //this is a null array with no memory location.
 
     try (Scanner input = new Scanner(System.in)) {
-      System.out.print("enter the size of array: ");
+      System.out.print("enter the size of array: ");// if i give more values as input than the size of array then the scanner will exclude the remaining values and they will be reserved for the next input statement.
       int n = input.nextInt();
+      // int array[] = new int[n];
       System.out.println("Array size: " + n);
     }
+
+    // to copy array elements to another array
+    System.arraycopy(arr4,0,arr2,0,arr4.length); //copying arr4 to arr2 from 3 to 4 index.
+    System.out.println("Array elements: " + Arrays.toString(arr2));
   }
 }
