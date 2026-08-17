@@ -1,5 +1,5 @@
 //arrays are created dynamically in java and the memory is allocated at the runtime.
-
+//
 import java.util.*;
 
 public class FirstArray{
@@ -9,6 +9,7 @@ public class FirstArray{
     System.out.println("arr1: " + Arrays.toString(arr1));
     
     // using new keyword
+    //array default value i.e. arr[x] is 0. 
     int[] arr2 = new int[5];
     System.out.println("arr2: " + Arrays.toString(arr2));
 
