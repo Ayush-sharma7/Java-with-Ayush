@@ -37,5 +37,14 @@ public class ConstructorTypesDemo{
         Product p1= new Product();
         System.out.println("Product p1: ");
         p1.getInfo();
+
+        Product p2= new Product(1001,"Omen HyperX",150000);
+        System.out.println("\nProduct p2: ");
+        p2.getInfo();
+
+        Product p3= new Product(1002,"HP Victus",150000);
+        System.out.println("\nProduct p3: ");
+        p3.getInfo();
+
     }
 }
