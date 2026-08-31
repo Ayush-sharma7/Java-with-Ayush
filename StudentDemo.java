@@ -1,37 +1,47 @@
-class Student{
-    String n;
-    int a;
-    String c;
-    boolean isA;
+class Student {
+    String name;
+    int age;
+    String course;
+    boolean isAttending;
+    
+    Student() {
+        System.out.println("default constructor");
+    }
 
-    void study(){
-        System.out.println(n +" is studying in "+ c);
+    void study() {
+        System.out.println(name + " is studying in " + course);
     }
-    void attendClasses(){
-        if (isA){
-            System.out.println(n + " is attending the classes");
+
+    void attendClass() {
+        if (isAttending) {
+            System.out.println(name + " is attend the classes");
+        } else {
+            System.out.println(name + " is not attend the classes");
         }
-        else{
-            System.out.println(n + " is not attending the classes");
-        }
+        System.out.println();
     }
-    void initializeObject(String name, int age, String course, boolean isAttending){
-        System.out.println("initializing object.");
-        n = name;
-        a = age;
-        c = course;
-        isA = isAttending;
+
+    void inilizeObject(String n, int a, String c, boolean ia) {
+        System.out.println("intialize object.");
+        name = n;
+        age = a;
+        course = c;
+        isAttending = ia;
     }
+
 }
-public class StudentDemo{
-    public static void main(String[] args){
+
+public class StudentDemo {
+    public static void main(String[] args) {
         Student s1 = new Student();
-        Student s2 = new Student();
-        s1.initializeObject("Rahul",20,"B.Tech",true);
-        s2.initializeObject("Ayush",18,"B.Tech",true);
+        s1.inilizeObject("Rahul", 20, "B.Tech", false);
         s1.study();
-        s1.attendClasses();
+        s1.attendClass();
+
+        Student s2 = new Student();
+        s2.inilizeObject("Priya", 19, "B.Sc", true);
         s2.study();
-        s2.attendClasses();
+        s2.attendClass();
+
     }
 }
