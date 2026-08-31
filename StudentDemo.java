@@ -26,8 +26,12 @@ class Student{
 public class StudentDemo{
     public static void main(String[] args){
         Student s1 = new Student();
+        Student s2 = new Student();
         s1.initializeObject("Rahul",20,"B.Tech",true);
+        s2.initializeObject("Ayush",18,"B.Tech",true);
         s1.study();
         s1.attendClasses();
+        s2.study();
+        s2.attendClasses();
     }
 }
