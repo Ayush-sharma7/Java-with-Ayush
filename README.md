@@ -1,22 +1,22 @@
-# ☕ Java With Ayush
+# Java With Ayush
 
-A collection of **Java programming exercises and fundamental implementations** created while learning Core Java, problem solving, arrays, algorithms, and object-oriented programming concepts.
+A collection of **Core Java exercises and beginner-friendly implementations** created while learning programming fundamentals, problem solving, arrays, algorithms, and object-oriented programming.
 
 ## 📌 About
 
-This repository is part of my journey toward becoming a stronger software developer through consistent programming practice.
+This repository documents my progress through consistent Java practice. Each source file focuses on one concept, small problem, or algorithm so it can be read and run independently.
 
 It contains small Java programs covering:
 
 * Java fundamentals
 * Arrays
 * Sorting algorithms
-* Searching/problem solving
+* Searching and problem solving
 * Mathematical programs
 * Input and output
 * Strings
-* Basic programming exercises
-* Logic-building problems
+* Object-oriented programming basics
+* Patterns and logic-building exercises
 
 ## 📚 Topics Covered
 
@@ -42,6 +42,12 @@ Practice includes:
 * Finding largest/second-largest values
 * Basic array manipulation
 
+### 🔎 Searching
+
+* Linear search
+* Finding the second-largest value
+* Finding the largest values in an array
+
 ### 🔃 Sorting
 
 Implementations include:
@@ -65,6 +71,19 @@ The repository also contains exercises involving:
 * Random values
 * Number tables
 
+### 🧱 Object-Oriented Programming
+
+Examples include:
+
+* Constructors
+* Classes and objects
+* Student and bank account examples
+* Jobs and basic object modelling
+
+### ✳️ Patterns
+
+The pattern exercises use nested loops to print stars, numbers, and other console-based designs.
+
 ## 🛠️ Requirements
 
 * Java JDK 8 or newer
@@ -80,7 +99,7 @@ git clone https://github.com/Ayush-sharma7/Java-with-Ayush.git
 cd Java-with-Ayush
 ```
 
-Compile a program:
+Compile a program from the repository root:
 
 ```bash
 javac BubbleSort.java
@@ -92,21 +111,32 @@ Run it:
 java BubbleSort
 ```
 
-Replace `BubbleSort` with the name of the Java class you want to execute.
+Replace `BubbleSort` with the source filename and class name you want to execute. For example, to run the compiled program:
+
+```bash
+java BubbleSort
+```
+
+To compile all programs at once:
+
+```bash
+javac *.java
+```
+
+Some programs read values from standard input. When prompted, enter the values requested by the program.
 
 ## 📂 Repository Structure
 
+The repository keeps the exercises in the root directory rather than grouping them into packages:
+
 ```text
 Java-with-Ayush/
-├── Fundamentals
-├── Arrays
-├── Sorting
-├── Mathematical Programs
-├── Input & Output
-└── Problem Solving
+├── *.java
+├── README.md
+└── .gitignore
 ```
 
-Each `.java` file is designed to demonstrate a particular programming concept or problem.
+Notable examples include `Array.java`, `BubbleSort.java`, `LinearSearch.java`, `StudentDemo.java`, and the `Question1.java` through `Question8.java` exercises. Each `.java` file is designed to demonstrate a particular programming concept or problem.
 
 ## 🎯 Purpose
 
@@ -123,7 +153,7 @@ By writing programs from scratch, I am working toward:
 
 ## 🌱 Future Learning
 
-Next areas I'm working toward include:
+Next areas I am working toward include:
 
 * Object-Oriented Programming
 * Collections Framework
@@ -134,6 +164,10 @@ Next areas I'm working toward include:
 * Competitive Programming
 * Backend development with Java
 
+## 📄 License
+
+This repository is intended for learning and practice. Add a project license if you plan to distribute or reuse the code formally.
+
 ## 👨‍💻 Author
 
 **Ayush Sharma**
@@ -142,4 +176,4 @@ B.Tech CSE(AIML) Student | Aspiring Software Developer
 
 ---
 
-⭐ Explore the repository if you're learning Java and want simple examples of fundamental programming concepts.
+If you are learning Java, feel free to explore the examples and experiment with the code.
