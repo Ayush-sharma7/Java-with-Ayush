@@ -35,7 +35,7 @@ public class Question7 {
     }
 
     public static int countAboveAverage(int arr[]) {
-        double avg = calcTotal(arr) / arr.length;
+        double avg = calcTotal(arr) / (arr.length * 1.0);
         int c = 0;
 
         for (int i = 0; i < arr.length; i++) {
