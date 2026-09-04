@@ -11,17 +11,24 @@ public class Question6 {
             System.out.println("Please enter at least two prices.");
 
             sc.close();
-        } else {
-            double lowest = arr[0];
-            double lowest2 = arr[1];
-
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] < lowest) {
-                    lowest = arr[i];
-                }
+        } 
+        else {
+            double lowest, lowest2;
+        
+            if (arr[0] < arr[1]) {
+                lowest = arr[0];
+                lowest2 = arr[1];
+            } else {
+                lowest = arr[1];
+                lowest2 = arr[0];
             }
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] < lowest2 && arr[i] != lowest) {
+            
+            for (int i = 2; i < arr.length; i++) {
+                if (arr[i] < lowest) {
+                    lowest2 = lowest;
+                    lowest = arr[i];
+                } 
+                else if (arr[i] < lowest2 && arr[i] != lowest) {
                     lowest2 = arr[i];
                 }
             }
