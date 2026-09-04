@@ -22,7 +22,7 @@ public class Question6 {
                 lowest = arr[1];
                 lowest2 = arr[0];
             }
-            
+
             for (int i = 2; i < arr.length; i++) {
                 if (arr[i] < lowest) {
                     lowest2 = lowest;
@@ -32,8 +32,11 @@ public class Question6 {
                     lowest2 = arr[i];
                 }
             }
-            System.out.printf("Lowest price: $%.2f\nSecond lowest price: $%.2f", lowest, lowest2);
-
+            if(lowest != lowest2){
+                System.out.printf("Lowest price: $%.2f\nSecond lowest price: $%.2f", lowest, lowest2);
+            } else{
+                System.out.printf("Lowest Price: $%.2f\nNo second lowest price exists!!",lowest);
+            }
             sc.close();
         }
     }
