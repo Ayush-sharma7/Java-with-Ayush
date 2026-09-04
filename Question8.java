@@ -52,7 +52,7 @@ public class Question8 {
         System.out.print("Enter Quarterly Revenues: ");
         int[] arr = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
-        System.out.printf("Max Revenue: %d $ | Min Revenue: %d $\nAverage Duration: %.2f\nRevenue above average: %d | Revenue below average: %d" ,findMax(arr),findMin(arr),calcTotal(arr)/(arr.length*1.0),countAboveAverage(arr),arr.length-countAboveAverage(arr));
+        System.out.printf("\n\n===============================\nCorporate Sales Performance Report\n===============================\n\nTotal Managers Evaluated : 30\n\nTop Performer Revenue     : %d\nLowest Performer Revenue  : %d\nMean Quarterly Revenue    : %.2f\nManagers Above Average    : %d\nManagers Below Average    : %d\n\n===============================\nEnd of Report \n=============================== ",findMax(arr),findMin(arr),calcTotal(arr)/(arr.length*1.0),countAboveAverage(arr),arr.length-countAboveAverage(arr));
 
         sc.close();
     }
