@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HospitalBedTracker {
+public class Question9 {
 
     static final int WARDS = 4;
     static final int BEDS_PER_WARD = 5;

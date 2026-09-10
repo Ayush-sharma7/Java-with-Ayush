@@ -38,7 +38,7 @@ class Employee {
                 "I.T: " + it;
     }
 
-    public class EmployeeInfoDemo {
+    public class Question10 {
         public static void main(String[] args) {
 
             Employee e1 = new Employee(1001, "Ayush", "01/01/2026", 'E', "R&D", 20000, 8000, 10000);
