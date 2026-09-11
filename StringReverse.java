@@ -28,7 +28,7 @@ public class StringReverse {
 
         String sar[] = name.split(" ");
         StringBuilder sb = new StringBuilder();
-        for(String s:sar){
+        for (String s : sar) {
             sb.append(reverse(s));
             sb.append(" ");
         }
