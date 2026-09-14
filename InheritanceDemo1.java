@@ -6,8 +6,9 @@ class A {
         this.money = money;
         this.pocketMoney = pocketMoney;
     }
-    public int getPocketMoney(){
-        return pocketMoney-400;
+
+    public int getPocketMoney() {
+        return pocketMoney - 400;
     }
 }
 
