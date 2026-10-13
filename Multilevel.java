@@ -25,15 +25,15 @@ class person {
     }
 }
 
-class Employee extends person {
+class MultilevelEmployee extends person {
     int empid;
     String dept;
 
-    Employee() {
+    MultilevelEmployee() {
         super();
     }
 
-    public Employee(String name, String adharid, String pannumber, int empid, String dept) {
+    public MultilevelEmployee(String name, String adharid, String pannumber, int empid, String dept) {
         super(name, adharid, pannumber);
         System.out.println("Employee");
         this.empid = empid;
@@ -46,7 +46,7 @@ class Employee extends person {
     }
 }
 
-class SoftwareEngineer extends Employee {
+class SoftwareEngineer extends MultilevelEmployee {
     String projectid;
     String projectname;
 

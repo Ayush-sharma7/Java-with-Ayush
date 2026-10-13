@@ -21,10 +21,10 @@
 //         return Math.pow(10,a);
 //     }
 // }
-class A{
+class InheritanceDemo2Base{
 
 }
-class B extends A{
+class InheritanceDemo2Derived extends InheritanceDemo2Base{
     double calculate(int a){
         return Math.pow(10,a);
     }
@@ -32,7 +32,7 @@ class B extends A{
 interface C{
     double calculate(int a);
 }
-class D extends B implements C{
+class D extends InheritanceDemo2Derived implements C{
     public double calculate(int a){
         return 0.0;
     }

@@ -1,10 +1,10 @@
-class Student {
+class DemoStudent {
     String name;
     int age;
     String course;
     boolean isAttending;
     
-    Student() {
+    DemoStudent() {
         System.out.println("default constructor");
     }
 
@@ -33,12 +33,12 @@ class Student {
 
 public class StudentDemo {
     public static void main(String[] args) {
-        Student s1 = new Student();
+        DemoStudent s1 = new DemoStudent();
         s1.inilizeObject("Rahul", 20, "B.Tech", false);
         s1.study();
         s1.attendClass();
 
-        Student s2 = new Student();
+        DemoStudent s2 = new DemoStudent();
         s2.inilizeObject("Priya", 19, "B.Sc", true);
         s2.study();
         s2.attendClass();

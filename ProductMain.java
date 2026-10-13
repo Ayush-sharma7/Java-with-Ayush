@@ -1,12 +1,12 @@
 import java.util.*;
 
-class Product {
+class ProductMainProduct {
     private int productId;
     private String productName;
     private String category;
     private double price;
 
-    public Product(int productId, String productName, String category, double price) {
+    public ProductMainProduct(int productId, String productName, String category, double price) {
         this.productId = productId;
         this.productName = productName;
         this.category = category;
@@ -49,7 +49,7 @@ class Product {
 
 public class ProductMain {
     public static void main(String[] args) {
-        Product obj1 = new Product(101, "Laptop", "Electronics", 5000);
+        ProductMainProduct obj1 = new ProductMainProduct(101, "Laptop", "Electronics", 5000);
         obj1.displayProduct();
 
         Scanner sc = new Scanner(System.in);
