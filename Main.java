@@ -27,5 +27,6 @@ public class Main {
         }
         int result = evaluator.evaluate(inputs);
         evaluator.printResult(result);
+        scanner.close();
     }
 }
