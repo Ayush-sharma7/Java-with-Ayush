@@ -23,6 +23,7 @@ public class Main {
                 break;
             default:
                 System.out.println("invalid operation");
+                scanner.close();
                 return;
         }
         int result = evaluator.evaluate(inputs);
